@@ -1,4 +1,4 @@
-# Activity 1
+# 💀 Activity 1
 
 - Author:  John Dearing
 - Date:  09/08/2026
