@@ -17,14 +17,31 @@
      1. Red
      2. Yellow
      3. Green
+3. imgs
+     1. Part 1 (Screenshots for activity 1 part 1)
+     2. Part 2 (Screenshots for activity 1 part 2)
 
 ## Links / Images
 
-- [wikiBob](https://gitlab.com/bobby.estey/wikibob/-/blob/master/README.md)
+- [John Dearing CST339 Repository](https://github.com/DragonReborn10/cst339/tree/main)
 - [Grand Canyon University](https://www.gcu.edu/)
 
-![America's Flagship Seal](https://gitlab.com/bobby.estey/wikibob/-/raw/master/docs/icons/cv64AmericasFlagShip100x100.png)
-![America's Flagship Seal](https://gitlab.com/bobby.estey/wikibob/-/raw/master/docs/icons/cv64AmericasFlagShip100x100.png "America's Flag Ship")
+#### Part 1 Screenshots:
+
+- Spring Tools Install:
+![Spring Tools Install](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part1/SpringInstall.png?raw=true "Spring Tools Install" )
+
+- Spring Hello World Console Message:
+![Spring Hello World Console Message](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part1/SpringHelloWorldConsoleMessage.png?raw=true "Spring Hello World Console Message")
+
+- White label ErrorPage:
+![White label ErrorPage](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part1/WhitelabelErrorPage.png?raw=true "White label ErrorPage")
+
+- html Hello World Message:
+![html Hello World Message](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part1/htmlHelloWorldMessage.png?raw=true "html Hello World Message")
+
+#### Part 2 Screenshots:
+
 
 ## Tables
 |First Name|Last Name|
