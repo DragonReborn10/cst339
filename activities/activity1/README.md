@@ -1,7 +1,7 @@
 # Activity 1
 
 - Author:  John Dearing
-- Date:  09/12/2026
+- Date:  09/13/2026
 
 ## Introduction
 
@@ -13,10 +13,10 @@
 1. activity1part1: Tools Installation and Validation
      1. src\main\java\com\gcu\activity1part1\Activity1part1Application.java (Spring Boot Hello World! java code)
      2. src\main\resources\static\index.html (localhost web Hello World!)
-2. Activity 1-2: Learning Maven 
-     1. Red
-     2. Yellow
-     3. Green
+2. activity1part2: Learning Maven 
+     1. src\main\java\com\gcu\activity1part2\Activity1part2Application.java (Spring Boot Hello World! java code)
+     2. src\main\resources\static\index.html (localhost web Hello World!)
+     3. target\helloworld.jar (generated helloworld.jar)
 3. imgs
      1. Part 1 (Screenshots for activity 1 part 1)
      2. Part 2 (Screenshots for activity 1 part 2)
@@ -42,52 +42,15 @@
 
 #### Part 2 Screenshots:
 
+- Maven Build Success:
+![Maven Build Success](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part2/MavenBuildSuccess.png?raw=true "Maven Build Success" )
 
-## Tables
-|First Name|Last Name|
-|--|--|
-|John|Dearing|
-|Hannah|Dearing|
+- helloworld.jar Target File:
+![helloworld.jar Target File](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part2/HelloWorldJarTargetFile.png?raw=true "helloworld.jar Target File")
 
-```java
-// Java Example
-public class CodeBlock {
-    public static void main(String[] args) {
-        System.out.println("Code Block Example");
-    }
-}
-```
+- White label ErrorPage:
+![White label ErrorPage](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part1/WhitelabelErrorPage.png?raw=true "White label ErrorPage")
 
-```mermaid
----
-title: MermaidJS - Class Diagram - Animal example
----
-classDiagram
-    note "From Duck till Zebra"
-    Animal <|-- Duck
-    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
-    }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
-    }
-    class Zebra{
-        +bool is_wild
-        +run()
-    }
-```
+## What I learned
 
-## Emoji
-[Emoji Cheatsheet](https://github.com/ikatyang/emoji-cheat-sheet)
-
-Cheers! :beers:
+Through Activity, I gained knowledge on how to create and execute a simple Spring Boot Application with Java. I was introduced to how to add dependencies, create a static HTML page, and test the program through localhost:8080. In Part 2, I was introduced to how Maven works on projects through pom.xml, how to build a Spring Boot Application into a runnable JAR file through clean package and finally how to execute the JAR file through the command prompt.
