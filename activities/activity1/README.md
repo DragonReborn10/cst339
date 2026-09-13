@@ -1,27 +1,22 @@
-# 💀 Activity 1
+# Activity 1
 
 - Author:  John Dearing
-- Date:  09/08/2026
+- Date:  09/12/2026
 
 ## Introduction
 
-- This is **Activity 1** ...
+- This is **Activity 1: Tools Installation, Validation, and Learning Maven**
 
-## Fruit Ordered List
-1. Oranges
-2. Apples
+- The goal of this activity is to gain knowledge on the tools and techniques used in the development and deployment of Spring Boot application. This activity gives us the opportunity to practice and apply our knowledge on how to configure Spring Tool Suite, create and test a simple “Hello World” Spring Boot application, and ensure that our local development environment is functioning properly. This activity serves as an introduction to the use of Maven in creating a project and handling its dependencies. With the use of the POM file of Maven, creation of JAR file and executing the application will allow us to develop necessary skills for the future.
+
+## Activity 1 file layout
+1. activity1part1: Tools Installation and Validation
+     1. src\main\java\com\gcu\activity1part1\Activity1part1Application.java (Spring Boot Hello World! java code)
+     2. src\main\resources\static\index.html (localhost web Hello World!)
+2. Activity 1-2: Learning Maven 
      1. Red
      2. Yellow
      3. Green
-4. Lines
-
-## Fruit Un-ordered List
-- Oranges
-- Apples
-     - Red
-     - Yellow
-     - Green
-- Lines
 
 ## Links / Images
 
