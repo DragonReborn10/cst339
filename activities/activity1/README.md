@@ -54,9 +54,9 @@
 
 ![helloworld.jar Target File](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part2/HelloWorldJarTargetFile.png?raw=true "helloworld.jar Target File")
 
-- White label ErrorPage:
+- Hello World! LocalHost:
 
-![White label ErrorPage](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part1/WhitelabelErrorPage.png?raw=true "White label ErrorPage")
+![Hello World! LocalHost](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part2/HelloWorldLocalHost.png?raw=true "Hello World! LocalHost")
 
 ## What I learned
 
