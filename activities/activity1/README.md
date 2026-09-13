@@ -58,6 +58,24 @@
 
 ![Hello World! LocalHost](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part2/HelloWorldLocalHost.png?raw=true "Hello World! LocalHost")
 
+## Research Questions
+
+- Research Spring Boot. Compare building dynamic web applications when using Spring Boot versus just using the Spring framework. How do they differ? 
+     - Spring Boot is a subset of the Spring Framework, which helps in developing dynamic web applications easily. The Spring Framework provides basic functionalities like Dependency Injection (DI) and Inversion of Control (loC), but it needs lots of configuration. Spring Boot follows convention over configuration to configure automatically the components of the framework according to the dependencies of the project. Spring Boot has an inbuilt web server, where the application can be started with a JAR file without using any server externally. Spring Boot uses starter packages for easy management of dependencies and uses Actuator for monitoring and checking the health of the application. By using Spring Boot, developers can reduce the efforts of configuration and setup of the application.
+
+     - Reference:
+     Spring vs Spring Boot. (25 Apr, 2026). GeeksforGeeks. https://www.geeksforgeeks.org/java/difference-between-spring-and-spring-boot/
+
+- Research Gradle, which is another popular build and dependency management tool. How does it differ from Maven?
+
+     - Gradle and Maven are build automation tools that help in compiling code, testing and managing project dependencies.
+     Maven employs XML files for configuration whereas Gradle has a flexible code based DSL that can be written using Groovy or Kotlin language.
+     Gradle is usually faster due to eliminating unnecessary tasks. It is faster as well due to its advanced dependency management and API/implementation dependency segregation.
+     Maven is the recommendation for normal Java applications due to its ease of use. Gradle is more suitable for bigger multimodule projects.
+
+     - Referance:
+     Difference between Gradle and Maven. (14 Mar, 2024). GeeksforGeeks. https://www.geeksforgeeks.org/java/difference-between-gradle-and-maven/
+
 ## What I learned
 
 Through Activity, I gained knowledge on how to create and execute a simple Spring Boot Application with Java. I was introduced to how to add dependencies, create a static HTML page, and test the program through localhost:8080. In Part 2, I was introduced to how Maven works on projects through pom.xml, how to build a Spring Boot Application into a runnable JAR file through clean package and finally how to execute the JAR file through the command prompt.
