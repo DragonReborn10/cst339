@@ -224,14 +224,21 @@ classDiagram
 ```
 ## WireFrame
 
-![America's Flagship Seal](https://gitlab.com/bobby.estey/wikibob/-/raw/master/docs/icons/cv64AmericasFlagShip100x100.png "America's Flag Ship")
+Login Page: 
 
-![America's Flagship Seal](https://gitlab.com/bobby.estey/wikibob/-/raw/master/docs/icons/cv64AmericasFlagShip100x100.png "America's Flag Ship")
+![Login Page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone1/imgs/LoginPage.png?raw=true "Login Page")
 
-![America's Flagship Seal](https://gitlab.com/bobby.estey/wikibob/-/raw/master/docs/icons/cv64AmericasFlagShip100x100.png "America's Flag Ship")
+Register Page: 
 
-![America's Flagship Seal](https://gitlab.com/bobby.estey/wikibob/-/raw/master/docs/icons/cv64AmericasFlagShip100x100.png "America's Flag Ship")
+![Register Page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone1/imgs/RegisterPage.png?raw=true "Register Page")
 
+Home Page:
+
+![Home Page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone1/imgs/HomePage.png?raw=true "Home Page")
+
+Dashboard Page:
+
+![Dashboard Page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone1/imgs/DashboardPage.png?raw=true "Dashboard Page")
 
 ## Links
 
