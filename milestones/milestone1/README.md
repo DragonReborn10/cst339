@@ -138,89 +138,114 @@ title: Soldier Management System - UML Class Diagram
 ---
 classDiagram
 
-    class Soldier {
-        -Long id
-        -String firstName
-        -String lastName
-        -String rank
-        -String unit
-        -String mos
-        -String dutyStatus
-        -String email
-        -String phoneNumber
-        -Long formationId
-        +getId() Long
-        +getFirstName() String
-        +getLastName() String
-        +getRank() String
-        +getUnit() String
-        +getMos() String
-        +getDutyStatus() String
-        +getEmail() String
-        +getPhoneNumber() String
-        +getFormationId() Long
-        +setId(Long id)
-        +setFirstName(String firstName)
-        +setLastName(String lastName)
-        +setRank(String rank)
-        +setUnit(String unit)
-        +setMos(String mos)
-        +setDutyStatus(String dutyStatus)
-        +setEmail(String email)
-        +setPhoneNumber(String phoneNumber)
-        +setFormationId(Long formationId)
-    }
-
     class User {
         -Long id
-        -String username
+        -String email
         -String password
+        -String securityQuestion1
+        -String securityAnswer1
+        -String securityQuestion2
+        -String securityAnswer2
         -String role
         -String formationAccessLevel
-        -Long formationId
-        +login()
-        +logout()
-        +canAccessFormation() boolean
+        +getEmail() String
+        +setEmail(String email)
+        +getPassword() String
+        +setPassword(String password)
+        +getRole() String
+        +setRole(String role)
+        +getFormationAccessLevel() String
+        +setFormationAccessLevel(String formationAccessLevel)
     }
 
-    class Formation {
-        -Long id
-        -String formationName
-        -String unitType
-        -String location
-        +getFormationDetails()
+    class LoginForm {
+        -String username
+        -String password
+        +getUsername() String
+        +setUsername(String username)
+        +getPassword() String
+        +setPassword(String password)
     }
 
-    class SoldierController {
-        +listSoldiers()
-        +viewSoldier(Long id)
-        +createSoldier()
-        +updateSoldier(Long id)
-        +deleteSoldier(Long id)
+    class RegistrationForm {
+        -String email
+        -String password
+        -String confirmPassword
+        -String securityQuestion1
+        -String securityAnswer1
+        -String securityQuestion2
+        -String securityAnswer2
+        +getEmail() String
+        +setEmail(String email)
+        +getPassword() String
+        +setPassword(String password)
+        +getConfirmPassword() String
+        +setConfirmPassword(String confirmPassword)
+        +getSecurityQuestion1() String
+        +setSecurityQuestion1(String question)
+        +getSecurityAnswer1() String
+        +setSecurityAnswer1(String answer)
+        +getSecurityQuestion2() String
+        +setSecurityQuestion2(String question)
+        +getSecurityAnswer2() String
+        +setSecurityAnswer2(String answer)
     }
 
-    class SoldierService {
-        +getAllSoldiers()
-        +getSoldierById(Long id)
-        +createSoldier(Soldier soldier)
-        +updateSoldier(Soldier soldier)
-        +deleteSoldier(Long id)
-        +getSoldiersByFormation(Long formationId)
+    class HomeController {
+        +showHome() String
     }
 
-    class SoldierRepository {
-        +findAll()
-        +findById(Long id)
-        +save(Soldier soldier)
-        +deleteById(Long id)
+    class LoginController {
+        +showLogin() String
+        +login(LoginForm loginForm) String
+        +logout() String
+        +forgotUsername() String
+        +forgotPassword() String
     }
 
-    Formation "1" --> "*" Soldier : contains
-    Formation "1" --> "*" User : grants access
-    User --> Formation : assigned to
-    SoldierController --> SoldierService : uses
-    SoldierService --> SoldierRepository : uses
-    SoldierRepository --> Soldier : manages
+    class RegistrationController {
+        +showRegistration() String
+        +registerUser(RegistrationForm registrationForm) String
+    }
+
+    class DashboardController {
+        +showDashboard() String
+        +viewFormationAccess() String
+        +viewMySoldierData() String
+        +logout() String
+    }
+
+    class UserService {
+        +registerUser(RegistrationForm form) User
+        +authenticate(String username, String password) boolean
+        +findUserByEmail(String email) User
+        +recoverUsername() String
+        +resetPassword() boolean
+    }
+
+    class AccessService {
+        +hasFormationAccess(User user) boolean
+        +getFormationAccessLevel(User user) String
+        +canViewAllSoldiers(User user) boolean
+    }
+
+    class SoldierDataService {
+        +viewMySoldierData(User user)
+        +viewFormationSoldierData(User user)
+    }
+
+    HomeController --> LoginController : navigates to
+    HomeController --> RegistrationController : navigates to
+    LoginController --> LoginForm : uses
+    LoginController --> UserService : uses
+    RegistrationController --> RegistrationForm : uses
+    RegistrationController --> UserService : uses
+    UserService --> User : manages
+    DashboardController --> User : current user
+    DashboardController --> AccessService : checks access
+    DashboardController --> SoldierDataService : requests data
+    AccessService --> User : checks role
+    SoldierDataService --> User : retrieves data for
 ```
 ## WireFrame
 
