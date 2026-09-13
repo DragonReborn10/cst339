@@ -29,26 +29,33 @@
 #### Part 1 Screenshots:
 
 - Spring Tools Install:
+
 ![Spring Tools Install](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part1/SpringInstall.png?raw=true "Spring Tools Install" )
 
 - Spring Hello World Console Message:
+
 ![Spring Hello World Console Message](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part1/SpringHelloWorldConsoleMessage.png?raw=true "Spring Hello World Console Message")
 
 - White label ErrorPage:
+
 ![White label ErrorPage](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part1/WhitelabelErrorPage.png?raw=true "White label ErrorPage")
 
 - html Hello World Message:
+
 ![html Hello World Message](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part1/htmlHelloWorldMessage.png?raw=true "html Hello World Message")
 
 #### Part 2 Screenshots:
 
 - Maven Build Success:
+
 ![Maven Build Success](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part2/MavenBuildSuccess.png?raw=true "Maven Build Success" )
 
 - helloworld.jar Target File:
+
 ![helloworld.jar Target File](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part2/HelloWorldJarTargetFile.png?raw=true "helloworld.jar Target File")
 
 - White label ErrorPage:
+
 ![White label ErrorPage](https://github.com/DragonReborn10/cst339/blob/main/activities/activity1/imgs/Part1/WhitelabelErrorPage.png?raw=true "White label ErrorPage")
 
 ## What I learned
