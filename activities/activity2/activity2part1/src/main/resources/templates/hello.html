@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+
+<body>
+
+    <h2 th:text="${message}">Default Message</h2>
+
+    <h2 th:text="${message2}">This is more Default Message</h2>
+
+    <a th:href="@{test4?message=Hello World from a Tymelead template!}">Test 4</a>
+    <br>
+
+    <a th:href="@{test3}">Test 3</a>
+    <br>
+
+    <a th:href="@{test2}">Test 2</a>
+
+</body>
+
+</html>
