@@ -26,27 +26,27 @@
 
 - Hello World Controller – Test 1:
 
-![Hello World Controller – Test 1]( "Hello World Controller – Test 1" )
+![Hello World Controller – Test 1](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/test1.png "Hello World Controller – Test 1" )
 
 - Spring MVC Model – Test 2:
 
-![Spring MVC Model – Test 2]( "Spring MVC Model – Test 2" )
+![Spring MVC Model – Test 2](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/test2.png "Spring MVC Model – Test 2" )
 
 - ModelAndView – Test 3:
 
-![ModelAndView – Test 3]( "ModelAndView – Test 3" )
+![ModelAndView – Test 3](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/test3.png "ModelAndView – Test 3" )
 
 - Request Parameter – Test 4:
 
-![Request Parameter – Test 4]( "Request Parameter – Test 4" )
+![Request Parameter – Test 4](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/test4.png "Request Parameter – Test 4" )
 
 - ModelAndView – Test 3 with Navigation Links:
 
-![ModelAndView – Test 3 with Navigation Links]( "ModelAndView – Test 3 with Navigation Links" )
+![ModelAndView – Test 3 with Navigation Links](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/Test%20links.png "ModelAndView – Test 3 with Navigation Links")
 
 - Activity 2 Home Page:
 
-![Activity 2 Home Page]( "Activity 2 Home Page" )
+![Activity 2 Home Page](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/homepage.png "Activity 2 Home Page" )
   
 #### Part 2 Screenshots:
 
