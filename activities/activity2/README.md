@@ -16,6 +16,13 @@
      3. src\main\resources\templates\hello.html (The Thymeleaf view that displays messages received from HelloWorldController.)
      4. src\main\java\com\gcu\HomeController.java (The Spring MVC controller that handles the root / URL and directs the user to the Home view.)
      5. src\main\resources\templates\home.html (The Thymeleaf Home view that displays the Activity 2 welcome message and provides a link to /hello/test2.)
+2. activity2part2: Creating Models, Views, and Controllers Using Spring MVC
+     1. src\main\java\com\gcu\activity2part1\Activity2part2Application.java (The main Spring Boot application file that starts the application and configures component scanning.)
+     2. src\main\java\com\gcu\controller\LoginController.java (The Spring MVC controller that displays the login form, processes submitted login information, validates the input, and sends order data to the Orders view.)
+     3. src\main\java\com\gcu\model\LoginModel.java (The model class that stores the username and password entered on the login form and defines their validation requirements.)
+     4. src\main\resources\templates\login.html (The Thymeleaf view that displays the login form and shows validation error messages for invalid user input.)
+     5. src\main\java\com\gcu\model\OrderModel.java (The model class that represents an order using its ID, order number, product name, price, and quantity.)
+     6. src\main\resources\templates\orders.html (The Thymeleaf view that displays the list of sample orders in a table.)
 
 ## Links / Images
 
@@ -50,11 +57,33 @@
   
 #### Part 2 Screenshots:
 
+- Login Form – Submitted User Credentials:
+
+![Login Form – Submitted User Credentials](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/test4.png "Login Form – Submitted User Credentials" )
+
+- Orders Page – Sample Order Data:
+
+![Orders Page – Sample Order Data](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/Test%20links.png "Orders Page – Sample Order Data")
+
+- Login Form – Data Validation Errors:
+
+![Login Form – Data Validation Errors](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/homepage.png "Login Form – Data Validation Errors" )
+
 #### Part 3 Screenshots:
 
 ## Research Questions
 
+- How does Spring MVC support the MVC design pattern? Draw a diagram that supports the answer to this question.
+    - Spring MVC is a framework based on the Model-View-Controller architecture for organizing the application. Spring MVC uses one DispatcherServlet which receives user requests and directs them to the proper controller. The Model is responsible for application data and business logic, and the View is responsible for rendering the UI. The Controller handles user requests and returns data needed by the View. There is a special View Resolver that finds the right page template (for example, JSP or Thymeleaf).
 
+    - Reference: Spring - MVC Framework. (30 Apr, 2026). GeeksforGeeks. https://www.geeksforgeeks.org/springboot/spring-mvc-framework/
+
+- Research and identify 2 MVC Frameworks other than Spring MVC. What are the frameworks and how do they differ from Spring MVC?
+
+    - Two other MVC-type frameworks include Django and Angular. The first one is a server-side framework written in Python that uses the Model-View-Template architecture and has a set of built-in mechanisms for database manipulation, authentication, and administrative tasks. Angular is a frontend framework created by Google in TypeScript. In contrast to Spring MVC and Django, Angular follows the component-oriented approach and works in the browser, communicating with databases using API. Spring MVC and Django produce HTML on the server side, whereas Angular, in most cases, generates a Single Page Application which is updated dynamically without a page reload.
+
+    - Reference: AngularJS Tutorial. (31 Jan, 2026). GeeksforGeeks. https://www.geeksforgeeks.org/angular-js/angularjs/
+    Django Tutorial. (10 Aug, 2026). GeeksforGeeks. https://www.geeksforgeeks.org/python/django-tutorial/
 
 ## What I learned
 
