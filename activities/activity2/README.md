@@ -17,12 +17,22 @@
      4. src\main\java\com\gcu\HomeController.java (The Spring MVC controller that handles the root / URL and directs the user to the Home view.)
      5. src\main\resources\templates\home.html (The Thymeleaf Home view that displays the Activity 2 welcome message and provides a link to /hello/test2.)
 2. activity2part2: Creating Models, Views, and Controllers Using Spring MVC
-     1. src\main\java\com\gcu\activity2part1\Activity2part2Application.java (The main Spring Boot application file that starts the application and configures component scanning.)
+     1. src\main\java\com\gcu\activity2part2\Activity2part2Application.java (The main Spring Boot application file that starts the application and configures component scanning.)
      2. src\main\java\com\gcu\controller\LoginController.java (The Spring MVC controller that displays the login form, processes submitted login information, validates the input, and sends order data to the Orders view.)
      3. src\main\java\com\gcu\model\LoginModel.java (The model class that stores the username and password entered on the login form and defines their validation requirements.)
      4. src\main\resources\templates\login.html (The Thymeleaf view that displays the login form and shows validation error messages for invalid user input.)
      5. src\main\java\com\gcu\model\OrderModel.java (The model class that represents an order using its ID, order number, product name, price, and quantity.)
      6. src\main\resources\templates\orders.html (The Thymeleaf view that displays the list of sample orders in a table.)
+3. activity2part3: Creating Layouts Using Thymeleaf
+     1. src\main\java\com\gcu\activity2part3\Activity2part3Application.java (The main Spring Boot application file that starts the application and configures component scanning.)
+     2. src\main\java\com\gcu\controller\LoginController.java (The Spring MVC controller that displays the login form, processes submitted login information, validates the input, and sends order data to the Orders view.)
+     3. src\main\java\com\gcu\model\LoginModel.java (The model class that stores the username and password entered on the login form and defines their validation requirements.)
+     4. src\main\resources\templates\login.html (The Thymeleaf view that displays the login form and shows validation error messages for invalid user input.)
+     5. src\main\java\com\gcu\model\OrderModel.java (The model class that represents an order using its ID, order number, product name, price, and quantity.)
+     6. src\main\resources\templates\orders.html (The Thymeleaf view that displays the list of sample orders in a table.)
+     7. src\main\resources\templates\layouts\common.html(The Thymeleaf layout file that defines the reusable header, navigation bar, GCU logo, page title, and footer.)
+     8. src\main\resources\templates\layouts\defaultTemplate.html (The Thymeleaf template that combines the common header and footer with the page-specific content.)
+     9. src\main\resources\static\imgs\gcu-logo.jpg.png (The image file containing the GCU logo displayed in the application's common header.)
 
 ## Links / Images
 
@@ -71,6 +81,14 @@
 
 #### Part 3 Screenshots:
 
+- Login Form – Thymeleaf Layout:
+
+![Login Form – Thymeleaf Layout](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part2/OrdersPage.png "Login Form – Thymeleaf Layout")
+
+- Orders Page – Thymeleaf Layout:
+
+![Orders Page – Thymeleaf Layout](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part2/LoginFormError.png "Orders Page – Thymeleaf Layout" )
+
 ## Research Questions
 
 - How does Spring MVC support the MVC design pattern? Draw a diagram that supports the answer to this question.
@@ -87,3 +105,4 @@
 
 ## What I learned
 
+- In Activity 2, I learned how to make use of the Spring MVC framework for organizing the Spring Boot application with the help of models, views, and controllers. I was also able to understand how to work with forms and form validation, view data with the help of Thymeleaf templates, and even create reusable pages with common headers and footers. Finally, I was able to gain more knowledge about working with Maven for managing dependencies and building my Spring Boot application.
