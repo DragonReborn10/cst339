@@ -59,15 +59,15 @@
 
 - Login Form – Submitted User Credentials:
 
-![Login Form – Submitted User Credentials](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/test4.png "Login Form – Submitted User Credentials" )
+![Login Form – Submitted User Credentials](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part2/LoginForm.png "Login Form – Submitted User Credentials" )
 
 - Orders Page – Sample Order Data:
 
-![Orders Page – Sample Order Data](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/Test%20links.png "Orders Page – Sample Order Data")
+![Orders Page – Sample Order Data](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part2/OrdersPage.png "Orders Page – Sample Order Data")
 
 - Login Form – Data Validation Errors:
 
-![Login Form – Data Validation Errors](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/homepage.png "Login Form – Data Validation Errors" )
+![Login Form – Data Validation Errors](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part2/LoginFormError.png "Login Form – Data Validation Errors" )
 
 #### Part 3 Screenshots:
 
