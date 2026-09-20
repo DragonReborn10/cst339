@@ -83,11 +83,11 @@
 
 - Login Form – Thymeleaf Layout:
 
-![Login Form – Thymeleaf Layout](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part2/OrdersPage.png "Login Form – Thymeleaf Layout")
+![Login Form – Thymeleaf Layout](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part3/LoginFormGCU.png "Login Form – Thymeleaf Layout")
 
 - Orders Page – Thymeleaf Layout:
 
-![Orders Page – Thymeleaf Layout](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part2/LoginFormError.png "Orders Page – Thymeleaf Layout" )
+![Orders Page – Thymeleaf Layout](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part3/OrdersPageGCU.png "Orders Page – Thymeleaf Layout" )
 
 ## Research Questions
 
