@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Soldier Management System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+  </head>
+
+  <body>
+    <div th:replace="~{layouts/defaultTemplate :: header('home')}"></div>
+
+    <main class="container home-page">
+      <section class="row align-items-center home-section">
+        <div class="col-12 col-md-3 text-center">
+          <img
+            th:src="@{/imgs/Texas.png}"
+            src="/imgs/Texas.png"
+            alt="Texas"
+            class="home-image"
+          />
+        </div>
+
+        <div class="col-12 col-md-9">
+          <h1 class="home-heading">Soldier Management System</h1>
+
+          <p class="home-text">
+            The Soldier Management System provides soldiers and authorized
+            personnel with centralized access to soldier information. Users can
+            access their individual soldier information and navigate the
+            application's personnel management features.
+          </p>
+        </div>
+      </section>
+
+      <section class="row align-items-center home-section">
+        <div class="col-12 col-md-9 order-2 order-md-1">
+          <h2 class="home-heading">Formation Level Management</h2>
+
+          <p class="home-text">
+            Authorized company commanders and full-time personnel will be able
+            to access soldier information for members assigned to their
+            formation. Additional soldier management features will be
+            implemented throughout later project milestones.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-3 text-center order-1 order-md-2">
+          <img
+            th:src="@{/imgs/NG.png}"
+            src="/imgs/NG.png"
+            alt="National Guard"
+            class="home-image"
+          />
+        </div>
+      </section>
+    </main>
+
+    <div th:replace="~{layouts/defaultTemplate :: footer}"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

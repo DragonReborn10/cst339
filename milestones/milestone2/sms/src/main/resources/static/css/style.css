@@ -1,0 +1,623 @@
+/*
+ * ========================================================
+ * Soldier Management System
+ * CST-339 Milestone 2
+ *
+ * Common styling shared by all application pages.
+ * ========================================================
+ */
+
+/* ========================================================
+   COLOR VARIABLES
+   ======================================================== */
+
+:root {
+
+    /* Soldier Management System theme colors */
+
+    --sms-background: #142525;
+
+    --sms-header: #555555;
+
+    --sms-green: #5acb8b;
+
+    --sms-green-dark: #579171;
+
+    --sms-dark-text: #102626;
+
+    --sms-white: #ffffff;
+
+    --sms-error: #ff9696;
+}
+
+/* ========================================================
+   GLOBAL PAGE
+   ======================================================== */
+
+html {
+
+    min-height: 100%;
+}
+
+body {
+
+    min-height: 100vh;
+
+    margin: 0;
+
+    background-color:
+        var(--sms-background);
+
+    color:
+        var(--sms-white);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+/* ========================================================
+   SHARED HEADER
+   ======================================================== */
+
+.sms-header {
+
+    width: 100%;
+
+    background-color:
+        var(--sms-header);
+
+    border-bottom:
+        1px solid #999999;
+}
+
+/* Application Title */
+
+.sms-title {
+
+    padding-top: 4px;
+
+    text-align: center;
+
+    color:
+        var(--sms-white);
+
+    font-size: 2.2rem;
+
+    font-weight: 500;
+
+    line-height: 1.1;
+}
+
+/* ========================================================
+   NAVIGATION
+   ======================================================== */
+
+.sms-nav {
+
+    align-items: stretch;
+
+    justify-content: center;
+}
+
+.sms-nav .nav-link {
+
+    padding:
+        7px 22px !important;
+
+    color:
+        var(--sms-white) !important;
+
+    font-size: 1.8rem;
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    text-align: center;
+}
+
+/* Highlights the currently selected page */
+
+.sms-nav .active-page {
+
+    background-color:
+        var(--sms-green-dark);
+
+    color:
+        #c4ead6 !important;
+}
+
+.sms-nav .nav-link:hover {
+
+    background-color:
+        var(--sms-green-dark);
+
+    color:
+        #c4ead6 !important;
+}
+
+/* ========================================================
+   HOME PAGE
+   ======================================================== */
+
+.home-page {
+
+    flex: 1;
+
+    padding-top: 70px;
+
+    padding-bottom: 70px;
+}
+
+.home-section {
+
+    min-height: 330px;
+
+    margin-bottom: 60px;
+}
+
+.home-heading {
+
+    color:
+        var(--sms-white);
+
+    font-size: 2.2rem;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.home-text {
+
+    color:
+        var(--sms-white);
+
+    font-size: 1.55rem;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    text-align: center;
+}
+
+/* Home page Texas and National Guard images */
+
+.home-image {
+
+    width: 210px;
+
+    height: 210px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+/* ========================================================
+   LOGIN PAGE
+   ======================================================== */
+
+.login-page {
+
+    flex: 1;
+
+    max-width: 1100px;
+
+    padding-top: 110px;
+
+    padding-bottom: 120px;
+}
+
+.login-form-row {
+
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+/* ========================================================
+   REGISTRATION PAGE
+   ======================================================== */
+
+.register-page {
+
+    flex: 1;
+
+    max-width: 1100px;
+
+    padding-top: 70px;
+
+    padding-bottom: 80px;
+}
+
+.register-row {
+
+    align-items: center;
+
+    margin-bottom: 24px;
+}
+
+/* ========================================================
+   SHARED FORM ELEMENTS
+   ======================================================== */
+
+.form-label {
+
+    width: 100%;
+
+    color:
+        var(--sms-white);
+
+    font-size: 2rem;
+
+    font-weight: 400;
+
+    text-align: right;
+}
+
+.form-input {
+
+    width: 100%;
+
+    height: 55px;
+
+    padding:
+        8px 14px;
+
+    background-color:
+        var(--sms-green);
+
+    color:
+        var(--sms-dark-text);
+
+    border: none;
+
+    border-radius: 0;
+
+    font-size: 1.25rem;
+}
+
+.form-input:focus {
+
+    background-color:
+        #72dda1;
+
+    outline:
+        3px solid var(--sms-white);
+}
+
+.form-button {
+
+    width: 100%;
+
+    min-height: 50px;
+
+    background-color:
+        var(--sms-green);
+
+    color:
+        var(--sms-dark-text);
+
+    border: none;
+
+    font-size: 1.4rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.form-button:hover {
+
+    background-color:
+        var(--sms-green-dark);
+
+    color:
+        var(--sms-white);
+}
+
+/* ========================================================
+   VALIDATION
+   ======================================================== */
+
+.validation-error {
+
+    margin-top: 6px;
+
+    color:
+        var(--sms-error);
+
+    font-size: 0.95rem;
+
+    font-weight: bold;
+}
+
+/* ========================================================
+   LOGIN RECOVERY LINKS
+   ======================================================== */
+
+.recovery-links {
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-size: 1.5rem;
+}
+
+.recovery-links a {
+
+    color:
+        var(--sms-white);
+
+    text-decoration: none;
+}
+
+.recovery-links a:hover {
+
+    color:
+        var(--sms-green);
+
+    text-decoration: underline;
+}
+
+/* ========================================================
+   DASHBOARD
+   ======================================================== */
+
+.dashboard-page {
+
+    flex: 1;
+
+    padding-top: 65px;
+
+    padding-bottom: 70px;
+}
+
+.dashboard-link {
+
+    color:
+        inherit;
+
+    text-decoration: none;
+}
+
+.dashboard-card {
+
+    position: relative;
+
+    height: 530px;
+
+    padding:
+        35px 25px;
+
+    background-color:
+        var(--sms-green);
+
+    color:
+        var(--sms-dark-text);
+
+    border-radius: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.dashboard-card h2 {
+
+    margin: 0;
+
+    font-size: 2.25rem;
+
+    font-weight: 500;
+
+    line-height: 1.1;
+}
+
+.dashboard-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================================
+   SHARED FOOTER
+   ======================================================== */
+
+.sms-footer {
+
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 15px 0;
+
+    background-color:
+        var(--sms-header);
+
+    color:
+        var(--sms-white);
+
+    font-size: 0.85rem;
+}
+
+/* ========================================================
+   TABLET
+   ======================================================== */
+
+@media (max-width: 991px) {
+
+    .sms-title {
+
+        font-size: 1.8rem;
+    }
+
+    .sms-nav .nav-link {
+
+        font-size: 1.4rem;
+
+        padding:
+            8px 14px !important;
+    }
+
+    .home-image {
+
+        width: 180px;
+
+        height: 180px;
+    }
+
+    .home-text {
+
+        font-size: 1.25rem;
+    }
+
+    .dashboard-card {
+
+        height: 400px;
+    }
+
+    .dashboard-card h2 {
+
+        font-size: 1.8rem;
+    }
+}
+
+/* ========================================================
+   MOBILE
+   ======================================================== */
+
+@media (max-width: 767px) {
+
+    .sms-title {
+
+        padding:
+            10px 50px;
+
+        font-size: 1.4rem;
+    }
+
+    .sms-nav {
+
+        width: 100%;
+    }
+
+    .sms-nav .nav-link {
+
+        width: 100%;
+
+        font-size: 1.25rem;
+    }
+
+    .home-page {
+
+        padding-top: 35px;
+    }
+
+    .home-section {
+
+        min-height: auto;
+
+        margin-bottom: 50px;
+
+        text-align: center;
+    }
+
+    .home-heading {
+
+        margin-top: 25px;
+
+        font-size: 1.7rem;
+    }
+
+    .home-text {
+
+        font-size: 1.1rem;
+    }
+
+    .home-image {
+
+        width: 150px;
+
+        height: 150px;
+
+        margin-bottom: 25px;
+    }
+
+    .form-label {
+
+        margin-bottom: 8px;
+
+        font-size: 1.4rem;
+
+        text-align: left;
+    }
+
+    .form-input {
+
+        height: 48px;
+    }
+
+    .login-page {
+
+        padding-top: 50px;
+    }
+
+    .register-page {
+
+        padding-top: 40px;
+    }
+
+    .login-form-row {
+
+        margin-bottom: 30px;
+    }
+
+    .register-row {
+
+        margin-bottom: 22px;
+    }
+
+    .dashboard-card {
+
+        height: 260px;
+
+        border-radius: 30px;
+    }
+
+    .dashboard-card h2 {
+
+        font-size: 1.8rem;
+
+        text-align: center;
+    }
+
+    .recovery-links {
+
+        font-size: 1.2rem;
+    }
+}
