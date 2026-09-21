@@ -213,27 +213,27 @@ classDiagram
 
 - Login page - empty form:
 
-![Login page - empty form](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part3/LoginFormGCU.png "Login page - empty form")
+![Login page - empty form](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone2/imgs/login.png "Login page - empty form")
 
 - Login page - empty form with errors:
 
-![Login page - empty form with errors](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part3/OrdersPageGCU.png "Login page - empty form with errors")
+![Login page - empty form with errors](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone2/imgs/loginerror.png "Login page - empty form with errors")
 
 - Register page - empty form:
 
-![Register page - empty form](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part3/LoginFormGCU.png "Register page - empty form")
+![Register page - empty form](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone2/imgs/register.png "Register page - empty form")
 
 - Register page - empty form with errors:
 
-![Register page - empty form with errors](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part3/OrdersPageGCU.png "Register page - empty form with errors")
+![Register page - empty form with errors](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone2/imgs/registererror.png "Register page - empty form with errors")
 
 - Home page:
 
-![Home page](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part3/LoginFormGCU.png "Home page")
+![Home page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone2/imgs/home.png "Home page")
 
 - Dashboard page:
 
-![Dashboard page](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part3/OrdersPageGCU.png "Dashboard page")
+![Dashboard page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone2/imgs/dashboard.png "Dashboard page")
 
 ## Links
 
