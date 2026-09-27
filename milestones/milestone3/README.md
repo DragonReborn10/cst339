@@ -504,17 +504,18 @@ The following functionality was tested:
 
 - Dashboard page:
 
-![Dashboard page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone2/imgs/dashboard.png "Dashboard page")
+![Dashboard page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone3/imgs/Dashboard.png "Dashboard page")
 
 - Create Soldier page:
 
-![Create Soldier page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone2/imgs/dashboard.png "Create Soldier page")
+![Create Soldier page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone3/imgs/CreateSolder.png "Create Soldier page")
 
 - Create Soldier page Error:
 
-![Create Soldier page Error](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone2/imgs/dashboard.png "Create Soldier page Error")
+![Create Soldier page Error](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone3/imgs/CreateSoldierError.png "Create Soldier page Error")
 
 ## Links
 
 - [John Dearing CST339 Repository](https://github.com/DragonReborn10/cst339/tree/main)
 - [Grand Canyon University](https://www.gcu.edu/)
+- [Loom Video Walkthrough](https://www.loom.com/share/99132576f4c2452ea71017899bd2166d)
