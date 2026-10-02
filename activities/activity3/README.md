@@ -120,7 +120,7 @@
      }
      }
      ```
-     ```java
+     ```java 
      @Service
      public class SoldierService {
      public String getSoldierRank() {
