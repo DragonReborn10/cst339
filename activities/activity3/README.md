@@ -55,43 +55,43 @@
 
 - OrdersBusinessService – Console Output:
 
-![Hello World Controller – Test 1](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/test1.png "Hello World Controller – Test 1" )
+![OrdersBusinessService – Console Output](https://github.com/DragonReborn10/cst339/blob/main/activities/activity3/imgs/part1/ConsoleOutputOrders.png "OrdersBusinessService – Console Output" )
 
 - AnotherOrdersBusinessService – Console Output:
 
-![Spring MVC Model – Test 2](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/test2.png "Spring MVC Model – Test 2" )
+![AnotherOrdersBusinessService – Console Output](https://github.com/DragonReborn10/cst339/blob/main/activities/activity3/imgs/part1/ConsoleOutputAnotherOrders.png "AnotherOrdersBusinessService – Console Output" )
 
 - SecurityBusinessService – Console Output:
 
-![ModelAndView – Test 3](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/test3.png "ModelAndView – Test 3" )
+![SecurityBusinessService – Console Output](https://github.com/DragonReborn10/cst339/blob/main/activities/activity3/imgs/part1/ConsoleOutputSecurity.png "SecurityBusinessService – Console Output" )
 
 - Orders Page – Business Service Data:
 
-![Request Parameter – Test 4](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part1/test4.png "Request Parameter – Test 4" )
+![rders Page – Business Service Data](https://github.com/DragonReborn10/cst339/blob/main/activities/activity3/imgs/part1/OrdersPage.png "rders Page – Business Service Data" )
   
 #### Part 2 Screenshots:
 
 - OrdersBusinessService – Prototype Scope:
 
-![Login Form – Submitted User Credentials](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part2/LoginForm.png "Login Form – Submitted User Credentials" )
+![OrdersBusinessService – Prototype Scope](https://github.com/DragonReborn10/cst339/blob/main/activities/activity3/imgs/part2/PrototypeScope.png "OrdersBusinessService – Prototype Scope" )
 
 - Using the Prototype Scope, Spring will create a new OrdersBusinessService instance each time a bean is requested by Spring. In such a case, init() will be executed several times because of creation of multiple beans rather than using a single singleton instance. 
 
 - OrdersBusinessService – Request Scope:
 
-![Orders Page – Sample Order Data](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part2/OrdersPage.png "Orders Page – Sample Order Data")
+![OrdersBusinessService – Request Scope](https://github.com/DragonReborn10/cst339/blob/main/activities/activity3/imgs/part2/RequestScope.png "OrdersBusinessService – Request Scope")
 
 - Using the Request Scope, Spring will create an instance of OrdersBusinessService per HTTP request. As such, init() will be executed as new request scoped beans are created each time a request is processed.
 
 - OrdersBusinessService – Session Scope:
 
-![Login Form – Data Validation Errors](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part2/LoginFormError.png "Login Form – Data Validation Errors" )
+![OrdersBusinessService – Session Scope](https://github.com/DragonReborn10/cst339/blob/main/activities/activity3/imgs/part2/SessionScope.png "OrdersBusinessService – Session Scope" )
 
 - Using the Session Scope, Spring will keep one OrdersBusinessService instance per browser session. In case the same session makes repeated requests, the same bean will be used; otherwise, the new bean instance will be created for a new browser session.
 
 - OrdersBusinessService – Singleton Scope:
 
-![Login Form – Data Validation Errors](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part2/LoginFormError.png "Login Form – Data Validation Errors" )
+![OrdersBusinessService – Singleton Scope](https://github.com/DragonReborn10/cst339/blob/main/activities/activity3/imgs/part2/SingletonScope.png "OrdersBusinessService – Singleton Scope" )
 
 - Using the Singleton Scope, Spring will create one OrdersBusinessService bean and re-use it through the application context. In this case, init() will be executed when the singleton bean instance is initialized instead of execution on each request.
 
@@ -99,11 +99,11 @@
 
 - REST Service – JSON Browser Response:
 
-![Login Form – Thymeleaf Layout](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part3/LoginFormGCU.png "Login Form – Thymeleaf Layout")
+![REST Service – JSON Browser Response](https://github.com/DragonReborn10/cst339/blob/main/activities/activity3/imgs/part3/jsonPage.png "REST Service – JSON Browser Response")
 
 - REST Service – XML Browser Response:
 
-![Orders Page – Thymeleaf Layout](https://github.com/DragonReborn10/cst339/blob/main/activities/activity2/imgs/part3/OrdersPageGCU.png "Orders Page – Thymeleaf Layout" )
+![REST Service – XML Browser Response](https://github.com/DragonReborn10/cst339/blob/main/activities/activity3/imgs/part3/XMLPage.png "REST Service – XML Browser Response" )
 
 ## Research Questions
 
