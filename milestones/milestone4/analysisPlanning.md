@@ -162,7 +162,7 @@ soldiers table
 
 - [John Dearing CST339 Repository](https://github.com/DragonReborn10/cst339/tree/main)
 - [Grand Canyon University](https://www.gcu.edu/)
-- [Milestone4 README.md]()
-- [Milestone4 design.md]()
-- [Milestone4 projectStatus.md]()
-- [Milestone4 test.md]()
+- [Milestone4 README.md](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/README.md)
+- [Milestone4 design.md](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/design.md)
+- [Milestone4 projectStatus.md](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/projectStatus.md)
+- [Milestone4 test.md](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/test.md)

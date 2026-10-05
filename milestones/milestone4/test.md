@@ -61,29 +61,29 @@ The following functionality was tested:
 
 - Registration success page:
 
-![Registration success page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone3/imgs/Dashboard.png "Registration success page")
+![Registration success page](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/imgs/RegistrationsuccessPage.png "Registration success page")
 
 - MySQL users table showing fictional registered user:
 
-![MySQL users table showing fictional registered user](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone3/imgs/CreateSolder.png "MySQL users table showing fictional registered user")
+![MySQL users table showing fictional registered user](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/imgs/registereduserMySQL.png "MySQL users table showing fictional registered user")
 
 - Create Soldier success message:
 
-![Create Soldier success message](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone3/imgs/CreateSoldierError.png "Create Soldier success message")
+![Create Soldier success message](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/imgs/CreateSoldierSuccess.png "Create Soldier success message")
 
 - MySQL soldiers table showing fictional Soldier record:
 
-![MySQL soldiers table showing fictional Soldier record](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone3/imgs/CreateSoldierError.png "MySQL soldiers table showing fictional Soldier record")
+![MySQL soldiers table showing fictional Soldier record](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/imgs/SoldierRecordMySQL.png "MySQL soldiers table showing fictional Soldier record")
 
 - Registration duplicate username error:
 
-![Registration duplicate username error](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone3/imgs/CreateSoldierError.png "Registration duplicate username error")
+![Registration duplicate username error](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/imgs/DuplicateUsernameError.png "Registration duplicate username error")
 
 ## Links
 
 - [John Dearing CST339 Repository](https://github.com/DragonReborn10/cst339/tree/main)
 - [Grand Canyon University](https://www.gcu.edu/)
-- [Milestone4 README.md]()
+- [Milestone4 README.md](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/README.md)
 - [Milestone4 analysisPlanning.md](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/analysisPlanning.md)
-- [Milestone4 design.md]()
-- [Milestone4 projectStatus.md]()
+- [Milestone4 design.md](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/design.md)
+- [Milestone4 projectStatus.md](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/projectStatus.md)
