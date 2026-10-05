@@ -84,6 +84,6 @@ The following functionality was tested:
 - [John Dearing CST339 Repository](https://github.com/DragonReborn10/cst339/tree/main)
 - [Grand Canyon University](https://www.gcu.edu/)
 - [Milestone4 README.md]()
-- [Milestone4 analysisPlanning.md]()
+- [Milestone4 analysisPlanning.md](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone4/analysisPlanning.md)
 - [Milestone4 design.md]()
 - [Milestone4 projectStatus.md]()
