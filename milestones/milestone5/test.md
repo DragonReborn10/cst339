@@ -39,27 +39,27 @@
 
 - Soldier list with all records:
 
-![Soldier list with all records](imgs\SoldierListAll.png "Soldier list with all records")
+![Soldier list with all records](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone5/imgs/SoldierListAll.png "Soldier list with all records")
 
 - Search by partial ID:
 
-![Search by partial ID](imgs\PartialID.png "Search by partial ID")
+![Search by partial ID](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone5/imgs/PartialID.png "Search by partial ID")
 
 - Search by partial name:
 
-![Search by partial name](imgs\PartialName.png "Search by partial name")
+![Search by partial name](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone5/imgs/PartialName.png "Search by partial name")
 
 - Edit Soldier with populated fields:
 
-![Edit Soldier with populated fields](imgs\EditSoldier.png "Edit Soldier with populated fields")
+![Edit Soldier with populated fields](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone5/imgs/EditSoldier.png "Edit Soldier with populated fields")
 
 - Delete confirmation:
 
-![Delete confirmation](imgs\DeleteConfirmation.png "Delete confirmation")
+![Delete confirmation](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone5/imgs/DeleteConfirmation.png "Delete confirmation")
 
 - Messed up Case Search:
 
-![Messed up Case Search](imgs\MessedUpCase.png "Messed up Case Search")
+![Messed up Case Search](https://github.com/DragonReborn10/cst339/blob/main/milestones/milestone5/imgs/MessedUpCase.png "Messed up Case Search")
 
 ## Links
 
