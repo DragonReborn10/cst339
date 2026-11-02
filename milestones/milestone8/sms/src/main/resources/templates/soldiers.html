@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>View Soldiers</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<!-- Shared application header -->
+<div th:replace="~{layouts/defaulttemplate :: header('soldiers')}"></div>
+
+<main class="container py-5">
+
+    <h1 class="text-center mb-4">Soldier Records</h1>
+
+    <!-- Success and error messages -->
+    <div class="alert alert-success"
+         th:if="${successMessage}"
+         th:text="${successMessage}">
+    </div>
+
+    <div class="alert alert-danger"
+         th:if="${errorMessage}"
+         th:text="${errorMessage}">
+    </div>
+
+    <!-- Search by ID, first name, last name, or full name -->
+    <form th:action="@{/soldiers}"
+          method="get"
+          class="row g-2 mb-4">
+
+        <div class="col-12 col-md-8">
+            <input
+                type="text"
+                name="search"
+                class="form-control"
+                th:value="${search}"
+                placeholder="Search Soldier ID, first name, or last name"
+                aria-label="Search Soldiers">
+        </div>
+
+        <div class="col-6 col-md-2">
+            <button type="submit"
+                    class="btn btn-primary w-100">
+                Search
+            </button>
+        </div>
+
+        <div class="col-6 col-md-2">
+            <a th:href="@{/soldiers}"
+               class="btn btn-secondary w-100">
+                Clear
+            </a>
+        </div>
+    </form>
+
+    <div class="mb-3"><a th:href="@{/delete-requests/mine}">My delete requests</a></div>
+    <!-- Navigation actions -->
+    <div class="d-flex flex-wrap gap-2 mb-4">
+        <a th:if="${canCreate}" th:href="@{/soldiers/create}"
+           class="btn btn-success">
+            Create Soldier
+        </a>
+
+        <a th:href="@{/dashboard}"
+           class="btn btn-outline-secondary">
+            Back to Dashboard
+        </a>
+    </div>
+
+    <!-- No matching records -->
+    <div class="alert alert-info text-center"
+         th:if="${#lists.isEmpty(soldiers)}">
+        No Soldiers found.
+    </div>
+
+    <!-- Soldier results -->
+    <div class="table-responsive"
+         th:unless="${#lists.isEmpty(soldiers)}">
+
+        <table class="table table-striped table-bordered table-hover align-middle">
+
+            <thead class="table-dark">
+                <tr>
+                    <th>Soldier ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Rank</th>
+                    <th>Unit</th>
+                    <th>MOS</th>
+                    <th>Duty Status</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr th:each="soldier : ${soldiers}">
+
+                    <td th:text="${soldier.soldierId}"></td>
+                    <td th:text="${soldier.firstName}"></td>
+                    <td th:text="${soldier.lastName}"></td>
+                    <td th:text="${soldier.rank}"></td>
+                    <td th:text="${soldier.unit}"></td>
+                    <td th:text="${soldier.mos}"></td>
+                    <td th:text="${soldier.dutyStatus}"></td>
+                    <td th:text="${soldier.email}"></td>
+                    <td th:text="${soldier.phoneNumber}"></td>
+
+                    <td>
+                        <div class="d-flex flex-wrap gap-2">
+
+                            <!-- Edit selected Soldier -->
+                            <a
+                                th:if="${canCreate}" th:href="@{/soldiers/edit/{id}(id=${soldier.soldierId})}"
+                                class="btn btn-warning btn-sm">
+                                Edit
+                            </a>
+
+                            <!-- Delete selected Soldier -->
+                            <form
+                                th:if="${isAdmin}" th:action="@{/soldiers/delete/{id}(id=${soldier.soldierId})}"
+                                method="post"
+                                onsubmit="return confirm('Are you sure you want to delete this Soldier?');">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-danger btn-sm">
+                                    Delete
+                                </button>
+                            </form>
+
+                            <!-- Non-admins request deletion; only an admin may execute it. -->
+                            <form th:unless="${isAdmin}"
+                                  th:action="@{/delete-requests/soldier/{id}(id=${soldier.soldierId})}"
+                                  method="post" class="d-flex gap-1 flex-wrap">
+                                <input name="reason" class="form-control form-control-sm"
+                                       minlength="10" maxlength="2000" required
+                                       placeholder="Reason for deletion (required)"
+                                       aria-label="Reason for deletion">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">Request Delete</button>
+                            </form>
+                        </div>
+                    </td>
+
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+</main>
+
+<!-- Shared application footer -->
+<div th:replace="~{layouts/defaulttemplate :: footer}"></div>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1">
+
+    <title>Dashboard</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+    <!-- Existing SMS navigation -->
+    <div th:replace="~{layouts/defaulttemplate :: header('createSoldier')}">
+    </div>
+
+    <main class="soldier-create-page">
+
+        <h1 class="soldier-create-title">
+            Create Soldier
+        </h1>
+
+        <!-- Success message -->
+        <div
+            th:if="${successMessage}"
+            class="soldier-create-alert soldier-create-alert-success"
+            th:text="${successMessage}">
+        </div>
+
+        <!-- Error message -->
+        <div
+            th:if="${errorMessage}"
+            class="soldier-create-alert soldier-create-alert-error"
+            th:text="${errorMessage}">
+        </div>
+
+        <form
+            class="soldier-create-form"
+            th:action="@{/soldiers/create}"
+            th:object="${soldierModel}"
+            method="post">
+
+            <!-- CSRF protection -->
+            <input
+                type="hidden"
+                th:if="${_csrf != null}"
+                th:name="${_csrf.parameterName}"
+                th:value="${_csrf.token}">
+
+            <!-- Formation ID -->
+            <div class="soldier-create-row">
+
+                <label
+                    for="formationId"
+                    class="soldier-create-label">
+                    Formation ID:
+                </label>
+
+                <div class="soldier-create-field">
+
+                    <input
+                        id="formationId"
+                        type="number"
+                        min="1"
+                        class="soldier-create-input"
+                        th:field="*{formationId}"
+                        th:readonly="${!isAdmin}"
+                        required>
+
+                    <small
+                        class="soldier-create-help"
+                        th:unless="${isAdmin}">
+                        Automatically assigned based on
+                        your account permissions.
+                    </small>
+
+                    <span
+                        class="soldier-create-error"
+                        th:if="${#fields.hasErrors('formationId')}"
+                        th:errors="*{formationId}">
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Soldier ID -->
+            <div class="soldier-create-row">
+
+                <label
+                    for="soldierId"
+                    class="soldier-create-label">
+                    Soldier ID:
+                </label>
+
+                <div class="soldier-create-field">
+
+                    <input
+                        id="soldierId"
+                        type="text"
+                        maxlength="20"
+                        class="soldier-create-input"
+                        th:field="*{soldierId}"
+                        required>
+
+                    <span
+                        class="soldier-create-error"
+                        th:if="${#fields.hasErrors('soldierId')}"
+                        th:errors="*{soldierId}">
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- First Name -->
+            <div class="soldier-create-row">
+
+                <label
+                    for="firstName"
+                    class="soldier-create-label">
+                    First Name:
+                </label>
+
+                <div class="soldier-create-field">
+
+                    <input
+                        id="firstName"
+                        type="text"
+                        maxlength="30"
+                        class="soldier-create-input"
+                        th:field="*{firstName}"
+                        required>
+
+                    <span
+                        class="soldier-create-error"
+                        th:if="${#fields.hasErrors('firstName')}"
+                        th:errors="*{firstName}">
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Last Name -->
+            <div class="soldier-create-row">
+
+                <label
+                    for="lastName"
+                    class="soldier-create-label">
+                    Last Name:
+                </label>
+
+                <div class="soldier-create-field">
+
+                    <input
+                        id="lastName"
+                        type="text"
+                        maxlength="30"
+                        class="soldier-create-input"
+                        th:field="*{lastName}"
+                        required>
+
+                    <span
+                        class="soldier-create-error"
+                        th:if="${#fields.hasErrors('lastName')}"
+                        th:errors="*{lastName}">
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Rank -->
+            <div class="soldier-create-row">
+
+                <label
+                    for="rank"
+                    class="soldier-create-label">
+                    Rank:
+                </label>
+
+                <div class="soldier-create-field">
+
+                    <input
+                        id="rank"
+                        type="text"
+                        maxlength="20"
+                        class="soldier-create-input"
+                        th:field="*{rank}"
+                        required>
+
+                    <span
+                        class="soldier-create-error"
+                        th:if="${#fields.hasErrors('rank')}"
+                        th:errors="*{rank}">
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Unit -->
+            <div class="soldier-create-row">
+
+                <label
+                    for="unit"
+                    class="soldier-create-label">
+                    Unit:
+                </label>
+
+                <div class="soldier-create-field">
+
+                    <input
+                        id="unit"
+                        type="text"
+                        maxlength="100"
+                        class="soldier-create-input"
+                        th:field="*{unit}"
+                        th:readonly="${!isAdmin}"
+                        required>
+
+                    <small
+                        class="soldier-create-help"
+                        th:unless="${isAdmin}">
+                        Automatically assigned based on
+                        your account permissions.
+                    </small>
+
+                    <span
+                        class="soldier-create-error"
+                        th:if="${#fields.hasErrors('unit')}"
+                        th:errors="*{unit}">
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- MOS -->
+            <div class="soldier-create-row">
+
+                <label
+                    for="mos"
+                    class="soldier-create-label">
+                    MOS:
+                </label>
+
+                <div class="soldier-create-field">
+
+                    <input
+                        id="mos"
+                        type="text"
+                        maxlength="10"
+                        class="soldier-create-input"
+                        th:field="*{mos}"
+                        required>
+
+                    <span
+                        class="soldier-create-error"
+                        th:if="${#fields.hasErrors('mos')}"
+                        th:errors="*{mos}">
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Duty Status -->
+            <div class="soldier-create-row">
+
+                <label
+                    for="dutyStatus"
+                    class="soldier-create-label">
+                    Duty Status:
+                </label>
+
+                <div class="soldier-create-field">
+
+                    <select
+                        id="dutyStatus"
+                        class="soldier-create-select"
+                        th:field="*{dutyStatus}"
+                        required>
+
+                        <option value="">
+                            Select Duty Status
+                        </option>
+
+                        <option value="Active">
+                            Active
+                        </option>
+
+                        <option value="Inactive">
+                            Inactive
+                        </option>
+
+                    </select>
+
+                    <span
+                        class="soldier-create-error"
+                        th:if="${#fields.hasErrors('dutyStatus')}"
+                        th:errors="*{dutyStatus}">
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="soldier-create-row">
+
+                <label
+                    for="email"
+                    class="soldier-create-label">
+                    Email:
+                </label>
+
+                <div class="soldier-create-field">
+
+                    <input
+                        id="email"
+                        type="email"
+                        maxlength="100"
+                        class="soldier-create-input"
+                        th:field="*{email}"
+                        required>
+
+                    <span
+                        class="soldier-create-error"
+                        th:if="${#fields.hasErrors('email')}"
+                        th:errors="*{email}">
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="soldier-create-row">
+
+                <label
+                    for="phoneNumber"
+                    class="soldier-create-label">
+                    Phone Number:
+                </label>
+
+                <div class="soldier-create-field">
+
+                    <input
+                        id="phoneNumber"
+                        type="tel"
+                        maxlength="20"
+                        class="soldier-create-input"
+                        th:field="*{phoneNumber}"
+                        required>
+
+                    <span
+                        class="soldier-create-error"
+                        th:if="${#fields.hasErrors('phoneNumber')}"
+                        th:errors="*{phoneNumber}">
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="soldier-create-actions">
+
+                <button
+                    type="submit"
+                    class="soldier-create-button">
+                    Create Soldier
+                </button>
+
+                <a
+                    th:href="@{/dashboard}"
+                    class="soldier-create-button soldier-create-back">
+                    Back to Dashboard
+                </a>
+
+            </div>
+
+        </form>
+
+    </main>
+
+   <div th:replace="~{layouts/defaulttemplate :: footer}">
+</div>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>

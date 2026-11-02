@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Soldier Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{layouts/defaulttemplate :: header('dashboard')}"></div>
+<main class="container py-4">
+    <h1>My Soldier Data</h1>
+    <p>This is the Soldier record linked to your account.</p>
+    <table class="table table-striped" aria-label="My Soldier record">
+        <tbody>
+            <tr><th scope="row">Soldier ID</th><td th:text="${soldier.soldierId}"></td></tr>
+            <tr><th scope="row">First Name</th><td th:text="${soldier.firstName}"></td></tr>
+            <tr><th scope="row">Last Name</th><td th:text="${soldier.lastName}"></td></tr>
+            <tr><th scope="row">Rank</th><td th:text="${soldier.rank}"></td></tr>
+            <tr><th scope="row">Unit</th><td th:text="${soldier.unit}"></td></tr>
+            <tr><th scope="row">Formation ID</th><td th:text="${soldier.formationId}"></td></tr>
+            <tr><th scope="row">MOS</th><td th:text="${soldier.mos}"></td></tr>
+            <tr><th scope="row">Duty Status</th><td th:text="${soldier.dutyStatus}"></td></tr>
+            <tr><th scope="row">Email</th><td th:text="${soldier.email}"></td></tr>
+            <tr><th scope="row">Phone</th><td th:text="${soldier.phoneNumber}"></td></tr>
+        </tbody>
+    </table>
+    <a class="btn btn-secondary" th:href="@{/dashboard}">Back to Dashboard</a>
+</main>
+<div th:replace="~{layouts/defaulttemplate :: footer}"></div>
+</body>
+</html>
